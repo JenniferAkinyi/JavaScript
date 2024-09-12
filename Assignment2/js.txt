@@ -1,0 +1,70 @@
+Assignment 2
+Data Types and Variables:
+1.	String, number, array, Boolean, objects, undefined
+2.	Var can be updated and re-declared while let can be update but not re-declared. Const on the other hand cannot be re-assigned or updated after its initial declaration.
+3.	Javascript is a dynamin language, meaning that variables are not bound to a specific data type thus a variable can hold any type of data, and its type can change over time.
+4.	Variables declared but not initialized have the value undefined.
+5.	Variable names are essential because they serve as identifiers for stored data, making code more readable and manageable. They act as labels that reference specific values in memory.
+Numeric Data Types
+1.	Integers, double and infinity
+2.	Integers are whole numbers, both positive and negative without a decimal point. Doubles are numbers that contain a decimal point, often referred to as floating-point numbers. Infinity is a special numeric value that represents a number larger than JavaScript can handle.
+3.	JavaScript automatically converts numeric data types to ensure that arithmetic operations can be performed correctly, even when the types are different (e.g., integer and float). The result of such operations will usually be in the most precise type (float if decimals are involved).
+
+String Data Type
+1.	In JavaScript, strings are sequences of characters (text) enclosed within single (' ') or double (" ") quotes.
+2.	There is no functional difference between using single or double quotes. Both are valid for representing strings.
+3.	This is because JavaScript follows the convention of treating any data enclosed within quotes (whether single or double) as a string, regardless of its length.
+
+Boolean and Undefined Data Types
+1.	Boolean variables in JavaScript represent one of two values: true or false. These values are typically used to control the logic and flow of a program, particularly in conditions, loops, and decision-making processes. Boolean variables help in making comparisons, validating conditions, and enabling logical decision-making in code.
+2.	Undefined is a special value that indicates a variable has been declared but has not been assigned a value.
+3.	Boolean variables are essential for controlling conditional logic in JavaScript. They are frequently used in if, else, and else if statements, loops (for, while), and other decision-making structures.
+
+Null Data Type
+1.	The null value in JavaScript represents the intentional absence of any object value. It’s used in programming when you intentionally want to clear a variable’s value or show that a result or object is intentionally empty.
+2.	Null is explicitly assigned by developers to represent an intentional absence of value while undefined is automatically assigned by JavaScript when a variable is declared but not initialized.
+3.	In the code, the variable age is set to null, indicating that it intentionally has no value or its value is currently unknown. This is useful when you need to represent a lack of value, but you don't want the variable to remain uninitialized (undefined).
+Object Data Type
+1.	Object is a data structure that allows you to store collections of key-value pairs. Objects are created using curly braces {} where each key (property) is associated with a value using a colon and pairs are separated by commas.
+2.	let countryInfo = { citizenShip: 'Kenyan', idNumber: 44455567 };
+The object countryInfo contains two properties:
+•	citizenShip with the value 'Kenyan' (a string).
+•	idNumber with the value 44455567 (a number).
+This object stores information about a person's citizenship and their ID number, which could be used to represent identification data.
+The purpose of countryInfo object is to encapsulate key details about a person’s nationality and identification. It can be used in scenarios where a user’s citizenship and ID information are required.
+3.	Nested objects occur when an object contains another object as one of its properties. This allows you to build complex data structures, where each property of the main object may itself be an object. Objects can be nested by assigning another object to a key within an object.
+Array Data Type
+1.	Arrays in JavaScript are used to store multiple values in a single variable. The purpose of array is to simplify managing and organizing multiple related values to allow efficient storage. The structure of arrays is:
+let fruits = ["apple", "banana", "orange"];
+2.	Array of strings
+let myRoom = ['bed', 'chair', 'gas cooker', 'table', 'tv'];
+Arrays of numbers
+let marks = [34, 56, 67, 78];
+3.	An array of arrays is when an array contains other arrays as its elements. This allows you to create a grid or matrix-like structure, which is useful for handling more complex data. Its significance is that It allows for better organization of related data in a structured manner.
+Variable Naming Conventions
+1.	Variable names in JavaScript should follow these conventions:
+•	Variable names are case-sensitive
+•	Variable names must start with a letter, underscore (_), or dollar sign ($).
+•	Variable names cannot contain spaces.
+•	Certain JavaScript keywords (e.g., let, var, const, if, else) cannot be used as variable names.
+•	JavaScript commonly uses camel case for naming variables. In camel case, multi-word names begin with a lowercase letter and subsequent words start with an uppercase letter (e.g., firstName, myVariable).
+2.	Readability: Meaningful and descriptive variable names make code easier to read and understand. They communicate the purpose of the variable clearly, reducing ambiguity and improving maintainability.
+Self-documenting code: Well-named variables make code self-explanatory, reducing the need for additional comments. Other developers (or your future self) can understand the code without constantly referring to documentation.
+Ease of debugging: Descriptive names make it easier to track issues or identify where certain data is being used, helping to streamline the debugging process.
+Collaboration: When working in teams, clear variable names improve collaboration, as others can quickly comprehend the functionality of your code.
+3.	Camel case
+let myRoom = ['bed', 'chair', 'gas cooker', 'table', 'tv'];
+let bankBalance = 23.78;
+let myKiswahiliMarks = 67;
+Non-descriptive variable names
+let sname = "John";  // Should be surname or lastName
+let name = 2000;  //This is vague
+Constants in JavaScript
+1.	The const keyword in JavaScript is used to declare constant variables whose values cannot be reassigned after their initial assignment. const is used to prevent accidental reassignment of variables, helping to maintain the integrity of the values that should not change.
+2.	When you declare a variable using const, JavaScript enforces the rule that the variable cannot be reassigned. Attempting to assign a new value to a constant variable will result in a TypeError.
+3.	In the provided code the instance is:
+const phoneNumber = 254789567364;
+console.log(phoneNumber);
+
+
+
