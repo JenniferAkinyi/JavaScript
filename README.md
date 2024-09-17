@@ -17,7 +17,7 @@ Sorting arrays of objects. Retrieving keys, values, and methods from objects. Ma
 ## Assignment 4: JSON Server and Frontend Integration
 This assignment demonstrates how to serve product data using json-server and how to populate the frontend with the fetched data using JavaScript and DOM manipulation. It simulates a basic web application fetching product data from an online server.
 
-![2024-09-16](https://github.com/user-attachments/assets/63b7e51a-279d-41c2-b61b-2cf7a791abc3)
+![Screenshot (3)](https://github.com/user-attachments/assets/7cdaf1e2-5f21-421a-bcd7-b35292b3de79)
 
 ## Assignment 5: Social media analytics
 This assignment was all about using filter, map and reduce methods in Javascript.
