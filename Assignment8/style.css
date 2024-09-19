@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Text:ital,wght@0,300..700;1,300..700&display=swap');
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+    max-width: 100%;
+    background-size: cover;
+}
+
+.body{
+    padding: 2rem 4rem;
+    font-family: 'Red Hat Text', sans-serif;
+}
+
+#content-display{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.content{
+    border: 1px solid black;
+}
+
+.content img{
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.content__description{
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.content__description button{
+    padding: 0.5rem 0.5rem;
+    background-color: navy;
+    font-weight: 500;
+    color: white;
+    border: none;
+
+}
+
