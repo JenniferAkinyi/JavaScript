@@ -25,4 +25,19 @@ This assignment was all about using filter, map and reduce methods in Javascript
 ![Screenshot (2)](https://github.com/user-attachments/assets/af048f08-bfc5-4ec6-b5bd-a7694bfa289d)
 
 ## Assignment 6: Delivery total price
-In this assignment we also covered usinf reduce in an array.
+In this assignment we also covered using reduce in an array.
+
+## Assignment 7: Simple technical questions
+In this assignment we did simple functions when working with objects and arrays
+
+## Assignment 8: Event handling web page
+This was a simple web page that handles events, we are also able to sort the events by price and date
+
+![Screenshot (5)](https://github.com/user-attachments/assets/ad584c8f-0efc-48b3-be43-233b00654098)
+
+## Assignment 9: Event handling web page(Part 2)
+In this assignment we added more functionalities like adding to cart.
+
+![Screenshot (4)](https://github.com/user-attachments/assets/85a76d2e-d89b-464a-9100-2bc2fac06603)
+
+
