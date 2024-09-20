@@ -43,8 +43,8 @@ img{
     justify-content: center;
     text-align: center;
 }
-.content__description button{
-    padding: 0.5rem 0.5rem;
+.content__description button{ 
+    padding: 0.5rem 1rem;
     background-color: navy;
     font-weight: 500;
     color: white;

@@ -27,14 +27,14 @@ try{
     console.log('Error:', error)
 }
 
-let contentDiv = document.createElement('div')
-contentDiv.classList.add('content')
-contentDiv.innerHTML = `
-    <img src="${content.imageUrl}" alt="${content.id}">
-    <h4>${content.title}</h4>
-    <p>${content.date}</p>
-    <p>${content.location}</p>
-    <p>ksh.${content.price}</p>
-    <button>Buy Now</button>
-`
-contentDisplay.appendChild(contentDiv)
+// let contentDiv = document.createElement('div')
+// contentDiv.classList.add('content')
+// contentDiv.innerHTML = `
+//     <img src="${content.imageUrl}" alt="${content.id}">
+//     <h4>${content.title}</h4>
+//     <p>${content.date}</p>
+//     <p>${content.location}</p>
+//     <p>ksh.${content.price}</p>
+//     <button>Buy Now</button>
+// `
+// contentDisplay.appendChild(contentDiv)
