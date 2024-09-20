@@ -27,6 +27,7 @@ img{
     padding: 2rem 4rem;
     font-family: 'Red Hat Text', sans-serif;
 }
+
 nav{
     display: flex;
     justify-content: space-between;
@@ -55,15 +56,19 @@ nav{
     gap: 1rem;
     position: relative;
 }
+#cart-icon{
+    border: none;
+}
 .cart-display .cart-count{
     background-color: red;
     color: white;
-    padding: 0.5rem;
+    padding: 0.4rem;
     border-radius: 50%;
     position: absolute;
     top: -5px;
     right: -10px;
-    font-size: 0,8rem;
+    font-size: 0.6rem;
+    /* display: none; */
 }
 
 #content-display{

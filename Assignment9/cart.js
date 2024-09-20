@@ -9,8 +9,11 @@ let cart = [];
 
 
 const contentDisplay = document.querySelector('#content-display')
-const cartItemsDisplay = document.querySelector('#cart-items')
+const cartItemsDisplay = document.querySelector('#list-products')
 const cartSubtotal = document.querySelector('#cart-subtotal')
+const cartCount = document.querySelector('#cart-count')
+const cartProducts = document.querySelector('.cart-products')
+const cartIcon = document.querySelector('#cart-icon')
 
 const fetchData = async (sorter=null) => {
     try{
@@ -47,7 +50,7 @@ const fetchData = async (sorter=null) => {
         // event listener for add to cart
         const addToCartButtons = document.querySelectorAll('.add-to-cart')
         addToCartButtons.forEach(button => {
-            button.addEventListener('click', (e) => {
+            button.addEventListener('click', () => {
                 const id = button.getAttribute('data-id')
                 const title = button.getAttribute('data-title')
                 const price = parseFloat(button.getAttribute('data-price'))
@@ -72,6 +75,9 @@ function addToCart(product){
     // update cart display and subtotal
     updateCartDisplay()
     updateCartSubtotal()
+    updateCartCount()
+
+    cartProducts.style.display = 'block';
 }
 // cart display
 function updateCartDisplay(){
@@ -93,6 +99,27 @@ function updateCartSubtotal(){
     // cartSubtotal.innerHTML = `ksh.${subtotal}`
     cartSubtotal.textContent = subtotal.toFixed(2);
 }
+function updateCartCount() {
+    const count = cart.reduce((sum, item) => sum + item.quantity, 0)
+    cartCount.textContent = count
+    cartCount.style.display = count > 0 ? 'inline-block' : 'none'
+}
+
+cartIcon.addEventListener('click', () => {
+    if (cartProducts.style.display === 'block') {
+        cartProducts.style.display = 'none';
+    } else {
+        cartProducts.style.display = 'block';
+    }
+})
+
+document.querySelector('#close-cart').addEventListener('click', () => {
+    cartProducts.style.display = 'none'
+})
+
+// document.querySelector('#clear-cart').addEventListener('click', () => {
+//     cartProducts.style.display = 'none'
+// })
 
 
 fetchData()
